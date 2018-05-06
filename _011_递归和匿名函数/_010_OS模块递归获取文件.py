@@ -18,6 +18,7 @@ def find_file(file_path):
 # 读取文件内容的函数
 def read_find_file(py_file):
     flag=False
+    '''
     f=open(py_file,"r")
     while True:
         line=f.readline()
@@ -27,6 +28,17 @@ def read_find_file(py_file):
             flag=True
             break
     f.close()
+    '''
+
+    with open(py_file,"r") as f:
+        while True:
+            line=f.readline()
+            if len(line)==0:
+                break
+            elif "Hello" in line:
+                flag=True
+                break
+
     return flag
 
 file_path="/Users/Fong/temp"
