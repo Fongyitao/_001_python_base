@@ -4,6 +4,7 @@ class Car:
         print("启动")
 
 c=Car() # 创建Car对象
-c.name="Audi"
+c.name="Audi"# 属性
 c.start() # 启动
 print(c.name) # Audi
+
