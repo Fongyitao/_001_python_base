@@ -18,7 +18,9 @@ class Student():
         self.age=age
         self.height=height
         self.weight=weight
+
     def __init__(self):
+
         pass
 
     def introduce(self):
@@ -42,5 +44,6 @@ TypeError: __init__() missing 4 required positional arguments: 'name', 'age', 'h
 __init__其实就是构造函数了
 
 '''
+
 
 
